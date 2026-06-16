@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Grace's Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+    <nav>
+        <div id="modeIndicator"></div>
+        <button id="themeToggle">Dark mode</button>
+        <button id="brailleToggle" aria-pressed="false"> Braille View</button>
+        <a href="#about" class="braille-text">About</a>
+        <a href="#projects" class="braille-text">Projects</a>
+        <a href="#skills" class="braille-text">Skills</a>
+        <a href="#experience" class="braille-text">Experience</a>
+        <a href="#contact" class="braille-text">Contact</a>
+    </nav>
+    <div class="container"> 
+
+        <section class="hero">
+
+        <img src="Checked Bag Receipt .png" alt="Grace" class="headshot">
+
+        <div class="hero-text">
+            <h1 class="braille-text">Grace Sibusiso Ndlovu</h1>
+
+            <p class="braille-text">
+                Computer Science & Mathematics(Statistics) Student<br>
+                Software Development • Data Analysis • Artificial Intelligence
+            </p>
+        
+        <div class="braille-text">
+            <a href="#projects">View My Work</a>
+            <a href="resume.pdf" class="resume-btn">
+                Resume
+            </a>
+        </div>
+
+        </div>
+
+    </section>
+    <section id="about" class="about">
+
+        <h2 class="braille-text">About Me</h2>
+
+        <p class = "braille-text">
+            I am a Computer Science and Mathematics (Statistics) student at Pomona College with interests in software development, data analysis, and quantitative problem solving. 
+            I enjoy understanding how systems work, whether that means exploring the logic behind a piece of software, uncovering patterns within data, or examining the assumptions that shape decisions. 
+            What draws me to technology is not only the ability to build solutions, but also the opportunity to think critically about why those solutions work and how they can be improved.
+        <p class = "braille-text">
+            I enjoy working on problems that seem complicated at first and figuring out how to break them down into smaller, more manageable parts. That mindset is what drew me to areas like algorithms, data structures, statistics, and data analysis. I like finding patterns, testing ideas, and using data to better understand a problem before deciding on a solution.
+            Outside of class, I look for ways to put these skills into practice through projects, leadership roles, and collaborative work. 
+            Whether I'm building software, analyzing data, mentoring other students, or helping lead campus organizations, I enjoy learning from new challenges and working with others to solve problems. I'm always looking for opportunities to grow technically while contributing to projects that have a meaningful impact.
+        </p>
+
+
+    </section>
+    <section id="projects" class="projects">
+
+        <h2 class="braille-text">Projects</h2>
+
+        <div class="project-card">
+            <h3 class="braille-text">USAP Alumni Website - Full Stack Web Development Project</h3>
+            <p class ="braille-text">Built a full stack alumni platform for USAP Community School, in Zimbabwe to improve engagement between alumni and current students. The system supports account creation, user authentication, and profile management, with automatic account setup for users using institutional emails and manual sign up for external users.
+            I worked across both the frontend and backend, developing the user interface, implementing core application logic, and managing data flow between the client and server. On the frontend, I used React to design a clean and responsive interface for navigating profiles and alumni information. On the backend, I helped structure the system handling authentication, user data, and account management features.
+            The project also involved working with data handling for user profiles and ensuring the system could support future features such as updates to profiles and expanded alumni networking functionality. I had to think about how different parts of the system connect, especially how user actions translate into stored and retrievable data.
+            
+            <div class="tags braille-text">
+                <span class="braille-text">JavaScript</span>
+                <span class="braille-text">React</span>
+                <span class="braille-text">Node.js</span>
+                <span class="braille-text">SQL</span>
+                <span class="braille-text">VS Code</span>
+            </div>
+
+            <div class="links braille-text">
+                <a href="#">GitHub</a>
+                <a href="#">Live Demo</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3 class ="braille-text">NextBite - Data-Driven Food Waste Reduction System (Pomona College)</h3>
+            <p class ="braille-text">Designed and developed an independent sustainability initiative aimed at reducing post-consumer food waste at Pomona College through real-time data tracking and feedback systems.
+            The project uses smart-bin scale sensors connected to data loggers, with Python scripts handling data collection, processing, and reporting. I worked on developing the software that connects the hardware inputs to a centralized system, enabling real-time aggregation of food waste data and preparation for public-facing visual displays.
+            Beyond measuring waste, the system was designed to make its impact visible to students through public-facing displays that translate food waste into tangible outcomes, including estimates of how many meals could have been recovered and distributed to the local community through the Food Recovery Network at the Draper Center.
+            The initiative was approved and funded by the President’s Office and is scheduled for launch in September 2026.</p>
+            <div class="tags">
+                <span class="braille-text">Python</span>
+                <span class="braille-text">Data Analysis</span>
+                <span class="braille-text">SQL</span>
+            </div>
+
+            <div class="links braille-text">
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#">Live Demo</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3 class="braille-text">Braille Text Analysis</h3>
+            <p class=" braille-text">
+            Built a Braille translation system that converts English text into Braille representations using Unicode Braille characters and visual dot rendering.
+            The system supports letters, numbers, punctuation, and selected contractions, with additional preprocessing logic to correctly handle numeric sequences using Braille number indicators.
+            The core translator processes input text into a nested Braille representation, which can be output in multiple forms including printed dot-matrix formatting and a Turtle graphics visualization that renders physical Braille cell structures.
+            To improve usability and explore accessibility applications, I extended this system into a web-based interface for this website, that implements a real-time Braille toggle using JavaScript. 
+            While this project focuses on translation and visualization rather than tactile output, the underlying translation engine demonstrates a core component used in larger accessibility systems. 
+            Similar translation logic can be integrated into screen readers, refreshable Braille displays, and other assistive technologies that support people with visual impairments.
+
+            <div class="tags braille-text">
+                <span class="braille-text">Python</span>
+                <span class="braille-text">Turtle Graphics</span>
+                <span class="braille-text">Braille Translation</span>
+                <span class="braille-text">HTML </span>
+                <span  class="braille-text">CSS </span>
+            </div>
+
+            <div class="links braille-text">
+                <a href="https://github.com/sunlitstorm/braille-text-analysis" target="_blank">GitHub</a>
+                <a href=" https://sunlitstorm.github.io/braille-text-analysis/" target="_blank">Live Demo</a>
+            </div>
+
+             <p class="project-note  braille-text">
+                This portfolio includes an optional Braille View inspired by this Braille Translation System project.
+            </p>
+        </div>
+
+    </section>
+
+    <section id="skills" class="skills">
+
+        <h2 class="braille-text">Skills</h2>
+
+        <div class="skills-container">
+
+            <span class="skill-tag braille-text">Python</span>
+            <span class="skill-tag braille-text">Java</span>
+            <span class="skill-tag braille-text">HTML</span>
+            <span class="skill-tag braille-text">CSS</span>
+            <span class="skill-tag braille-text">JavaScript</span>
+
+            <span class="skill-tag braille-text">Git</span>
+            <span class="skill-tag braille-text">GitHub</span>
+            <span class="skill-tag braille-text">SQL</span>
+
+            <span class="skill-tag braille-text">Data Structures</span>
+            <span class="skill-tag braille-text">Algorithms</span>
+
+            <span class="skill-tag braille-text">Data Analysis</span>
+            <span class="skill-tag braille-text">Statistics</span>
+            <span class="skill-tag braille-text">Probability</span>
+            <span class="skill-tag braille-text">Machine Learning</span>
+
+            <span class="skill-tag braille-text">VS Code</span>
+            <span class="skill-tag braille-text">React</span>
+            <span class="skill-tag braille-text">Node.js</span>
+
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+
+        <h2 class="braille-text">Experience</h2>
+
+        <!-- Internships -->
+        <div class="experience-category">
+            <h3 class="braille-text">Internships</h3>
+
+            <div class="experience-card">
+            <h4 class=" braille-text">Web Development Intern</h4>
+            <p class="role-subtitle braille-text">Education Matters Africa</p>
+            <p class="role-subtitle braille-text">May 2026 - Aug 2026</p>
+            <ul>
+            <li class ="braille-text">As a Remote Web Development Intern at Education Matters Africa, I collaborated with another intern to develop an online networking platform for the USAP alumni community, a global network of more than 500 alumni living, studying, and working around the world.</li> 
+            <li class ="braille-text">Together, we worked to create a digital space where alumni could build professional connections, share opportunities, and stay engaged with the community beyond graduation. </li>
+            <li class ="braille-text">Throughout the project, I contributed to the planning, design, and development process while working closely with organizational leadership and technical mentors to translate community needs into practical technical solutions. </li>
+            <li class ="braille-text">As both a developer and a USAP alumna, I found the project especially meaningful because it allowed me to use technology to give back to a community that has played a significant role in my own journey.</li>
+
+            </ul>
+            </div>
+
+            <div class="experience-card">
+            <h4 class ="braille-text">Communications Intern</h4>
+            <p class="role-subtitle braille-text">Education Matters Africa</p>
+            <p class="role-subtitle braille-text">Jan 2025 - Jul 2025</p>
+            <ul>
+                <li class ="braille-text">Used digital storytelling to communicate the impact of programs supporting low-income, high-achieving students throughout Zimbabwe.</li>
+                <li class ="braille-text">Created social media and website content that amplified student voices, promoted opportunities, and increased awareness of the organization's mission.</li> 
+                <li class ="braille-text">Managed online communications across multiple platforms, ensuring content remained engaging, accessible, and up to date.</li>
+                <li class ="braille-text">Worked at the intersection of technology and communication, using digital tools to connect students, families, and supporters with educational resources and success stories.</li> 
+                <li class ="braille-text">Helped strengthen the organization's online presence through content creation, website management, and audience engagement initiatives.</li>
+            </ul>
+            </div>
+
+
+        </div>
+
+        <!-- Research -->
+        <div class="experience-category">
+            <h3 class="braille-text">Programmes</h3>
+
+            <div class="experience-card">
+            <h4 class ="braille-text"> Jane Street Focus Participant</h4>
+            <p class="role-subtitle braille-text">May 2026</p>
+            <ul>
+                <li class ="braille-text">Selected for Jane Street’s FOCUS program, where I explored how quantitative trading works through problem-solving exercises, probability-based reasoning, and group simulation tasks. </li>
+                <li class ="braille-text">A lot of the work involved making decisions under uncertainty and explaining your thinking clearly while working with others.</li>
+                <li class ="braille-text">I also got a sense of how traders and engineers think about markets, especially how structured logic and small assumptions can change outcomes in practice. </li>
+                <li class ="braille-text">The group activities pushed me to think more carefully about trade-offs and to adjust my reasoning based on feedback in real time.</li>
+                <li class ="braille-text">Overall, it gave me a clearer understanding of quantitative thinking and how math and decision-making show up in real systems.</li>
+            </ul>
+            </div>
+        </div>
+
+        <!-- Leadership / Clubs -->
+        <div class="experience-category">
+            <h3 class="braille-text">Leadership & Clubs</h3>
+
+            <div class="experience-card braille-text">
+                <h4 class="braille-text">Jaiva Africa Dance Club</h4>
+                <p class="role-subtitle braille-text">Club President</p>
+                <p class="role-subtitle braille-text">Aug 2026 - Present</p>
+                <ul class="braille-text">
+                    Dance has always been one of my favorite ways to connect with people and express myself. Although Jaiva Africa is a 5C club, most of our members have traditionally come from Pomona College and Claremont McKenna College. 
+                    As President, I am working to make the club more representative of the broader 5C community by reaching out to dance departments and student organizations across the consortium, 
+                    encouraging students from all campuses to get involved, and creating a space where everyone feels welcome to learn, perform, and celebrate African culture through dance.
+
+                </ul>
+            </div>
+
+            <div class="experience-card braille-text">
+                <h4 class = "braille-text">International Student Mentor</h4>             
+                <p class="role-subtitle braille-text">Aug 2026 - Present</p>                
+                <ul class="braille-text">
+                    Coming to college as an international student was one of the biggest transitions of my life. 
+                    While I was excited for the opportunity, I also had to navigate a new academic system, culture, and environment far from home. 
+                    As an International Student Mentor, I draw on that experience to support incoming students as they adjust to life on campus.
+                    Whether through sharing advice, checking in regularly, or simply being someone they can turn to, I aim to help students feel welcomed, supported, and confident as they find their place within the college community.
+
+                </ul>
+            </div>
+
+            <div class="experience-card braille-text">
+                <h4 class="braille-text">African Students Association</h4>
+                <p class="role-subtitle braille-text">Social Media Team</p>
+                <p class="role-subtitle braille-text">Aug 2026 - Present</p>
+                <ul class="braille-text">
+                    Stories don't only live in conversations. Sometimes they live in a thirty second video, a photo carousel, or a graphic that makes someone stop scrolling. 
+                    As part of the African Students Association Social Media Team, I help capture and share the moments that shape our community. From designing promotional content and event flyers to editing videos that highlight performances and student experiences, 
+                    I enjoy transforming ideas and memories into content that reflects the energy, culture, and creativity of the organization.
+                </ul>
+            </div>
+
+            <div class="experience-card braille-text">
+            <h4 class="braille-text">First-Year Sponsor</h4>
+                <p class="role-subtitle braille-text">Aug 2026 - Present</p>
+                <ul class="braille-text">
+                    Starting college comes with excitement, uncertainty, and a lot of questions that no handbook can fully answer. 
+                    As a First-Year Sponsor, I support new students as they navigate the transition to college life by sharing advice, offering encouragement, and helping them build connections within the campus community. 
+                    Through regular check-ins and informal conversations, I aim to create a welcoming environment where students feel comfortable asking questions, seeking support, and finding their place on campus.
+
+                </ul>
+            </div>
+
+            <div class="experience-card braille-text">
+            <h4 class="braille-text">First-Year Class Committee</h4>
+                <p class="role-subtitle braille-text">Public Relations</p>
+                <p class="role-subtitle braille-text">Sep 2025 - May 2026</p>
+                <ul class="braille-text">
+                    I've always enjoyed being behind the camera, editing videos, and finding creative ways to tell stories. 
+                    As part of the First-Year Class Committee's Public Relations team, I used those interests to help document and promote class events throughout the year. 
+                    Whether I was creating content, covering events, or sharing updates with students, I enjoyed capturing the moments that brought our class together and helping build excitement around campus activities. 
+                    The experience strengthened my skills in communication, digital media, and audience engagement while allowing me to contribute to a stronger sense of community among first-year students.
+
+                </ul>
+            </div>
+
+            <div class="experience-card braille-text">
+            <h4 class=" braille-text">Programming Hub for Youth</h4>
+                <p class="role-subtitle braille-text">Vice President</p>
+                <p class="role-subtitle braille-text">Jan 2023 - Jan 2025</p>
+                <ul class="braille-text">
+                    My interest in technology extends beyond building software and data analysis. 
+                    As Vice President of Programming Hub for Youths, I helped create opportunities for young learners in Zimbabwe to explore technology in an accessible and supportive environment. 
+                    Recognizing that many students had limited exposure to digital tools, I designed and led beginner-friendly workshops covering HTML, CSS, internet literacy, and essential computer skills. 
+                    Through school outreach and community engagement, we grew the program from 17 to 35 students and introduced dozens of young learners to the possibilities that technology can offer. 
+                    One of the most rewarding parts of the role was mentoring students individually and watching their confidence grow as they learned to navigate digital spaces, solve problems independently, and develop curiosity about technology.
+
+                </ul>
+            </div>
+
+        </div>
+    </section>
+           
+     
+    <section id="contact" class="contact">
+
+        <h2 class="braille-text">Contact</h2>
+
+        <p class="braille-text">Feel free to connect with me.</p>
+
+        <a href="mailto:gsnp2025@mymail.pomona.edu" >
+            Email
+        </a>
+
+        <a href="https://github.com/sunlitstorm" target="_blank">
+            GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/grace-sibusiso-ndlovu-08a527267/" target="_blank">
+            LinkedIn
+        </a>
+
+    </section>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
