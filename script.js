@@ -2,8 +2,13 @@ const toggle = document.getElementById("themeToggle");
 
 toggle.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
-});
 
+  if (document.body.classList.contains("dark-mode")) {
+    toggle.textContent = "Light mode";
+  } else {
+    toggle.textContent = "Dark mode";
+  }
+});
 const brailleButton = document.getElementById("brailleToggle");
 
 let brailleMode = false;
@@ -118,3 +123,61 @@ function updateModeText() {
         ? "Braille Mode Active"
         : "English Mode Active";
 }
+
+
+//Age function
+
+const birthDate = new Date(2005, 5, 12);
+
+function calculateAge() {
+  const now = new Date();
+  return (now - birthDate) / (1000 * 60 * 60 * 24 * 365.2425);
+}
+
+function updateAge() {
+  const ageEl = document.getElementById("age");
+
+  if (!ageEl) {
+    console.log("AGE ELEMENT NOT FOUND");
+    return;
+  }
+
+  const age = calculateAge();
+
+  console.log("live age:", age);
+
+  ageEl.textContent = age.toFixed(10);
+}
+
+updateAge();
+setInterval(updateAge, 1000);
+
+
+
+let isSpeaking = false;
+let utterance;
+
+const speakButton = document.getElementById("speakButton");
+
+speakButton.addEventListener("click", () => {
+
+    if (isSpeaking) {
+        window.speechSynthesis.cancel();
+        isSpeaking = false;
+        speakButton.textContent = "🔊 Read Page";
+        return;
+    }
+
+    const text = document.body.innerText;
+    utterance = new SpeechSynthesisUtterance(text);
+
+    utterance.onend = () => {
+        isSpeaking = false;
+        speakButton.textContent = "🔊 Read Page";
+    };
+
+    window.speechSynthesis.speak(utterance);
+
+    isSpeaking = true;
+    speakButton.textContent = "⏹ Stop";
+});
