@@ -12,144 +12,339 @@
 
 <body>
   
-    <nav>
-        <div id="modeIndicator"></div>
-        <button id="themeToggle">Dark mode</button>
-        <button id="brailleToggle" aria-pressed="false"> Braille View</button>
-        <a href="#about" class="braille-text">About</a>
-        <a href="#projects" class="braille-text">Projects</a>
-        <a href="#skills" class="braille-text">Skills</a>
-        <a href="#experience" class="braille-text">Experience</a>
-        <a href="#contact" class="braille-text">Contact</a>
-    </nav>
+    <nav class="site-nav" aria-label="Main navigation">
+        <div class="nav-inner">
+
+            <div class="nav-heading">
+                <a href="#" class="nav-name">
+                    Grace Sibusiso <span class="braille-text">Ndlovu.</span>
+                </a>
+                <span class="nav-edition">PORTFOLIO / 2026</span>
+            </div>
+
+            <div class="nav-bottom">
+                <div class="nav-links">
+                    <a href="#about"><span>01</span> About</a>
+                    <a href="#projects"><span>02</span> Projects</a>
+                    <a href="#skills"><span>03</span> Skills</a>
+                    <a href="#experience"><span>04</span> Experience</a>
+                    <a href="#contact"><span>05</span> Contact</a>
+                </div>
+
+                <div class="nav-tools">
+                    <button id="themeToggle">Dark mode</button>
+                    <button id="brailleToggle" aria-pressed="false">Braille View</button>
+                </div>
+            </div>
+
+        </div>
+</nav>
 
   <section class="hero">
 
+<div class="hero-decorations" aria-hidden="true">
+    <span class="shape circle c1"></span>
+    <span class="shape circle c2"></span>
+    <span class="shape circle c3"></span>
+    <span class="shape circle c4"></span>
+    <span class="shape circle c5"></span>
+    <span class="shape circle c6"></span>
+    <span class="shape circle c7"></span>
+    <span class="shape circle c8"></span>
+
+    <span class="shape square s1"></span>
+    <span class="shape square s2"></span>
+    <span class="shape square s3"></span>
+    <span class="shape square s4"></span>
+    <span class="shape square s5"></span>
+    <span class="shape square s6"></span>
+    <span class="shape square s7"></span>
+    <span class="shape square s8"></span>
+
+    <span class="shape triangle t1"></span>
+    <span class="shape triangle t2"></span>
+    <span class="shape triangle t3"></span>
+    <span class="shape triangle t4"></span>
+    <span class="shape triangle t5"></span>
+    <span class="shape triangle t6"></span>
+    <span class="shape triangle t7"></span>
+    <span class="shape triangle t8"></span>
+
+    <span class="shape diamond d1"></span>
+    <span class="shape diamond d2"></span>
+    <span class="shape diamond d3"></span>
+    <span class="shape diamond d4"></span>
+    <span class="shape diamond d5"></span>
+    <span class="shape diamond d6"></span>
+
+    <span class="shape hexagon h1"></span>
+    <span class="shape hexagon h2"></span>
+    <span class="shape hexagon h3"></span>
+    <span class="shape hexagon h4"></span>
+
+    <span class="shape star st1"></span>
+    <span class="shape star st2"></span>
+    <span class="shape star st3"></span>
+    <span class="shape star st4"></span>
+
+    <span class="shape plus x1"></span>
+    <span class="shape plus x2"></span>
+    <span class="shape plus x3"></span>
+    <span class="shape plus x4"></span>
+    <span class="shape plus x5"></span>
+
+    <span class="shape dot p1"></span>
+    <span class="shape dot p2"></span>
+    <span class="shape dot p3"></span>
+    <span class="shape dot p4"></span>
+    <span class="shape dot p5"></span>
+    <span class="shape dot p6"></span>
+    <span class="shape dot p7"></span>
+    <span class="shape dot p8"></span>
+    <span class="shape dot p9"></span>
+    <span class="shape dot p10"></span>
+    <span class="shape dot p11"></span>
+    <span class="shape dot p12"></span>
+</div>
+
     <div class="hero-overlay">
 
-     <p class="hero-line braille-text">  Hi, I’m Grace</p>
+        <div class="hero-introduction">
+            <p class="hero-greeting braille-text">Hi, I'm</p>
 
-      <p class="hero-line braille-text">
-        Welcome to my personal website!
-      </p>
- 
-      <p class="hero-line braille-text">
-        It's snapshot of my work, interests, and experiences at <span id="age">0</span> years old</p>
+            <h1 class="hero-name braille-text">Grace</h1>
+
+            <div class="hero-divider"></div>
+
+            <p class="hero-welcome braille-text">
+                Welcome to my personal website!
+            </p>
+        </div>
+
+        <p class="hero-snapshot braille-text">
+            It's snapshot of my work, interests, and experiences at
+            <span id="age">0</span> years old.
+        </p>
 
     </div>
+
 
   </section>
+        <div class="container">
+            <section class="intro">
 
+                <p class="intro-description braille-text">
+                    Computer Science & Mathematics (Statistics Track) Student
+                </p>
 
-    <div class="container">
-    <section class="intro">
+                <p class="intro-interests braille-text">
+                    Software Engineering • Applied Mathematics • Product Design
+                </p>
 
-        <h1 class="braille-text">Grace Sibusiso Ndlovu</h1>
+                <div class="hero-buttons braille-text">
+                    <a href="#projects">View My Work</a>
+                    <a href="Resume_Grace_Sibusiso_Ndlovu.pdf"
+                    class="resume-btn"
+                    target="_blank"
+                    rel="noopener noreferrer">Resume</a>
+                </div>
 
-        <p class="braille-text">
-        Computer Science & Mathemagtics (Statistics) Student<br>
-        Software Engineering • Data Science • Artificial Intelligence
-        </p>
-
-        <div class="hero-buttons braille-text">
-        <a href="#projects">View My Work</a>
-        <a href="Grace_Sibusiso_Ndlovu_Resume__LaTeX.pdf"
-            class="resume-btn"
-            target="_blank"
-            rel="noopener noreferrer">Resume
-        </a>
+            </section>
         </div>
-    </section>
+
+<section id="about" class="about-editorial">
+
+    <div class="about-topline">
+        <span class="braille-text">A LITTLE CONTEXT</span>
+        <span class="braille-text">01 — ABOUT</span>
     </div>
 
-    <section id="about" class="about">
+    <div class="about-opening">
+        <div class="about-heading">
+            <p class="about-overline braille-text">THE PERSON BEHIND THE PROJECTS</p>
 
-        <h2 class="braille-text">About Me</h2>
+            <h2 class="about-title braille-text">
+                I have a lot of
+                <span class="braille-text">questions.</span>
+                <span class="about-title-accent braille-text">And plenty of</span>
+                <span class="about-title-accent braille-text">answers to find.</span>
+            </h2>
+        </div>
 
-        <p class = "braille-text">
-            I am a Computer Science and Mathematics (Statistics) student at Pomona College with interests in software development, data analysis, and quantitative problem solving. 
-            I enjoy understanding how systems work, whether that means exploring the logic behind a piece of software, uncovering patterns within data, or examining the assumptions that shape decisions. 
-            What draws me to technology is not only the ability to build solutions, but also the opportunity to think critically about why those solutions work and how they can be improved.
-        <p class = "braille-text">
-            I enjoy working on problems that seem complicated at first and figuring out how to break them down into smaller, more manageable parts. That mindset is what drew me to areas like algorithms, data structures, statistics, and data analysis. I like finding patterns, testing ideas, and using data to better understand a problem before deciding on a solution.
-            Outside of class, I look for ways to put these skills into practice through projects, leadership roles, and collaborative work. 
-            Whether I'm building software, analyzing data, mentoring other students, or helping lead campus organizations, I enjoy learning from new challenges and working with others to solve problems. I'm always looking for opportunities to grow technically while contributing to projects that have a meaningful impact.
+        <div class="about-intro">
+            <p class="braille-text">
+                Computer Science and Mathematics student at Pomona College.
+                Originally from Zimbabwe. Interested in software, applied mathematics,
+                data, and the questions that make me want to understand more.
+            </p>
+            <span class="about-side-note braille-text">A mind full of questions.</span>
+        </div>
+    </div>
+
+    <div class="about-origin">
+
+        <div class="about-origin-number">
+            <span class="about-number-label braille-text">THE YEAR IT STARTED</span>
+            <span class="about-big-number braille-text">17</span>
+            <span class="about-number-caption braille-text">
+                My first computer.
+            </span>
+        </div>
+
+        <div class="about-origin-story">
+            <span class="about-section-index braille-text">01 / THE BEGINNING</span>
+
+            <h3 class="braille-text">
+                One shared computer. A lot of curiosity.
+            </h3>
+
+            <p class="braille-text">
+                I grew up in Zimbabwe and didn't have a computer of my own until I was 17. 
+                My first experience with one was at boarding school, where I had to share. 
+                Now, I spend a good portion of my time writing code, working through mathematical problems, and occasionally wondering why I thought taking both subjects was a good idea.
+            </p>
+
+            <p class="braille-text">
+                It's funny how much has changed since then. 
+                What started with getting my hands on a computer whenever I could has turned into something I genuinely enjoy spending my time on.
+           
+            </p>
+        </div>
+
+    </div>
+
+    <div class="about-thinking">
+
+        <div class="about-thinking-heading">
+            <span class="about-section-index braille-text">02 / HOW I THINK</span>
+            <h3 class="braille-text">
+                Different interests.<br>
+                <em class="braille-text">Connected questions.</em>
+            </h3>
+        </div>
+
+        <div class="about-thinking-content">
+            <p class="braille-text">
+                I like understanding how things fit together. In Computer
+                Science, that might mean tracing the logic behind an
+                algorithm or figuring out why a system behaves the way it
+                does. In Mathematics and Statistics, it might mean finding
+                patterns, testing assumptions, or making sense of uncertainty.
+            </p>
+
+            <p class="braille-text">
+                I'm also interested in what happens when these ideas leave
+                the classroom. Who is a product designed for? What happens
+                when someone uses it differently than expected? Can a
+                technical solution make an everyday experience better?
+                Those are the kinds of questions I like bringing into my projects.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="about-beyond">
+
+        <span class="about-section-index braille-text">03 / OUTSIDE THE SCREEN</span>
+
+        <h3 class="about-beyond-title braille-text">
+            I do, in fact, <em class="braille-text">go outside.</em>
+        </h3>
+
+        <p class="braille-text">
+            I'm involved in dance, mentoring, and student organizations.
+            I enjoy telling stories through photography and video, trying
+            new things, and finding excuses to get involved in something
+            interesting. There is usually a project, an idea, or a new
+            interest somewhere on my to-do list.
         </p>
 
+        <div class="about-interests">
+            <span class="braille-text">DANCE</span>
+            <span class="braille-text">PHOTOGRAPHY</span>
+            <span class="braille-text">MENTORING</span>
+            <span class="braille-text">STORYTELLING</span>
+            <span class="braille-text">COMMUNITY</span>
+            <span class="braille-text">LEARNING</span>
+        </div>
 
-        </section>
+    </div>
+
+    <div class="about-ending">
+        <span class="braille-text">A WORK IN PROGRESS, BY DESIGN.</span>
+        <p class="braille-text">There is always something else to learn.</p>
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
         <section id="projects" class="projects">
 
             <h2 class="braille-text">Projects</h2>
 
-            <div class="project-card">
-                <h3 class="braille-text">USAP Alumni Website - Full Stack Web Development Project</h3>
-                <p class ="braille-text">
+        <div class="project-card">
+            <h3 class="braille-text">USAP Alumni Community Platform</h3>
 
-                    <p class="braille-text">
-        Developing a full-stack web application for the USAP Community School in Zimbabwe to support a global network of 500+ alumni. The platform uses a client-server architecture to provide secure authentication, profile management, alumni directory functionality, and account administration features.
-    </p>
+            <p class="braille-text">
+                Co-developing a full-stack web platform for the USAP Community School in Zimbabwe, designed to connect a network of 500+ alumni and current students across the world. Inspired by the community-building features of Pomona's Sagehen Connect, the project aims to make it easier for students to connect with alumni, learn from their experiences, and discover opportunities.
+            </p>
 
-    <p class="braille-text">
-        <strong class="braille-text">Completed:</strong><br>
-        • Designed and developed a responsive frontend using React with reusable component-based architecture.<br>
-        • Implemented client-side routing and dynamic user interfaces for alumni profiles and platform navigation.<br>
-        • Developed backend functionality to manage user authentication, account creation, and profile data management.<br>
-        • Built authentication workflows supporting institutional email-based account setup and manual registration for external users.<br>
-        • Designed relational database structures to efficiently store, retrieve, and update alumni information.<br>
-        • Implemented CRUD operations for user profiles, account administration, and alumni data management.<br>
-        • Integrated frontend components with backend services through API communication to enable dynamic data retrieval and updates.<br>
-        • Used Git and GitHub for version control, collaborative development, and code management.
-    </p>
+            <p class="braille-text">
+                <strong class="braille-text">Product Development:</strong><br>
+                • Helped shape the platform's structure and user experience, considering how alumni with different levels of technical familiarity would navigate and use it.<br>
+                • Developed responsive interfaces using React and reusable components, with client-side routing for profiles, directories, and platform navigation.<br>
+                • Implemented secure authentication, account creation, and profile management, including institutional email-based setup and manual registration for external users.<br>
+                • Designed relational database structures using PostgreSQL through Supabase and implemented CRUD operations for alumni profiles and account administration.<br>
+                • Integrated frontend components with backend services through API communication.<br>
+                • Implemented lazy loading and caching to improve performance and reduce unnecessary loading for users with limited internet connectivity.<br>
+                • Used Git and GitHub for version control and collaborative development.
+            </p>
 
-    <p class="braille-text">
-        <strong class="braille-text">In Progress:</strong><br>
-        • Improving application scalability through backend optimization and efficient database queries.<br>
-        • Strengthening input validation, error handling, and authentication security.<br>
-        • Expanding administrative tools and role-based access functionality.<br>
-        • Conducting testing and debugging across frontend components and backend services.
-    </p>
+            <p class="braille-text">
+                <strong class="braille-text">Current Focus:</strong><br>
+                • Refining information organization and navigation to make the platform intuitive and easy to use.<br>
+                • Completing final testing, debugging, input validation, and authentication security improvements ahead of launch.
+            </p>
 
-    <p class="braille-text">
-        <strong class="braille-text">Planned:</strong><br>
-        • Implement advanced alumni search and filtering functionality.<br>
-        • Develop additional networking and community engagement features.<br>
-        • Optimize application performance through improved API design and data handling.<br>
-        • Deploy the platform to a production environment with monitoring and maintenance workflows.
-    </p>
+            <p class="braille-text">
+                As a USAP alumna, I understand the community this platform is intended to serve. Having grown up with unreliable internet access, I think carefully about how design and technical decisions affect people using different devices and internet connections. What started as an idea my friend and I discussed has grown into a platform we hope will make it easier for generations of USAP students and alumni to stay connected.
+            </p>
 
-    <p class="braille-text">
-        As a USAP alumna myself, I find this project especially meaningful because it allows me to use technology to give back to a community that played a significant role in my educational journey.
-    </p>
             <div class="tags braille-text">
                 <span class="braille-text">JavaScript</span>
                 <span class="braille-text">React</span>
                 <span class="braille-text">Node.js</span>
-                <span class="braille-text">SQL</span>
+                <span class="braille-text">Express.js</span>
                 <span class="braille-text">Supabase</span>
+                <span class="braille-text">PostgreSQL</span>
                 <span class="braille-text">REST APIs</span>
-                <span class="braille-text">Git/Github</span>
+                <span class="braille-text">Git/GitHub</span>
             </div>
-
         </div>
 
         <div class="project-card">
             <h3 class ="braille-text">NextBite - IoT Food Waste Monitoring & Data Analytics System</h3>
 
             <p class="braille-text">
-                President’s Office grant-funded sustainability initiative developing an IoT-based food waste monitoring system that reduces post-consumer waste through automated data collection, processing, and real-time visualization. The project is scheduled for campus deployment in September 2026.
+                NextBite is a President’s Office-funded sustainability initiative focused on monitoring and reducing food waste at Frank Dining Hall. The project uses an IoT-based system to make food waste more visible and provide campus stakeholders with information they can use to identify waste patterns and make more informed decisions.
             </p>
 
             <p class="braille-text">
-                Developed the software architecture connecting smart-bin scale sensors, Raspberry Pi data collection devices, and centralized data systems. Built Python-based data processing pipelines to collect, validate, transform, and aggregate sensor-generated food waste measurements for analytics and reporting.
+                Contributed to the development of the system architecture connecting digital scales installed beneath dining hall bins, Raspberry Pi devices, and centralized data infrastructure. Developed Python-based processes to collect, process, and transmit food waste measurements to the college's IT database.
             </p>
 
             <p class="braille-text">
-                Designed data workflows to support real-time visualization dashboards that translate waste measurements into actionable insights for students and campus stakeholders. The system prepares food waste data for public-facing displays, including estimates of recoverable meals and community impact through the Food Recovery Network at the Draper Center.
+                Used R to visualize collected data and help translate measurements into information that could be understood and used by campus stakeholders. The project received $1,500 in funding from the President's Office and contributed to a 5% reduction in food waste.
             </p>
 
             <p class="braille-text">
-                This project strengthened my experience in IoT systems, software development, automation, data engineering, and scalable system design by integrating hardware inputs with reliable software infrastructure for real-world deployment.
+                This project strengthened my experience in IoT systems, data processing, and software development while showing me how technology can help people understand real-world problems and make more informed decisions.
             </p>
 
             <div class="tags">
@@ -170,6 +365,12 @@
             I originally built the project because I was interested in how language can be represented and translated through software. As I developed it, I learned more about Braille and accessibility technologies, which motivated me to expand the project into a web-based interface with a real-time Braille toggle using JavaScript. The Braille view can be switched on and off using a toggle in the navigation bar, allowing users to instantly convert on-screen text between English and Braille.
             To further explore accessibility, I added an audio feature that reads selected text aloud using the browser’s built-in speech synthesis. Users can highlight any text on the page and listen to it, providing an additional non-visual way of interacting with the content. The feature is accessed through a button at the bottom of the page.
 
+            <p class="braille-text">
+                Growing up in a household with my visually impaired grandmother made me more aware of the different ways people experience and access information. 
+                It also made me curious about how technology could make everyday information more accessible. That personal connection is what drew me to this project. 
+                I wanted to explore how something we often take for granted, like reading written text, could be made accessible in a different format. 
+                It was an opportunity to combine my interest in computer science with something that has personal meaning to me.
+            </p>
                 <div class="tags braille-text">
                 <span class="braille-text">Python</span>
                 <span class="braille-text">Turtle Graphics</span>
@@ -190,81 +391,72 @@
 
     </section>
 
-    <section id="skills" class="skills">
 
-        <h2 class="braille-text">Skills</h2>
+<section id="skills" class="skills">
 
-        <div class="skills-container">
+    <h2 class="braille-text">Skills</h2>
 
-    <!-- Programming Languages -->
-    <span class="skill-tag braille-text">Python</span>
-    <span class="skill-tag braille-text">Java</span>
-    <span class="skill-tag braille-text">JavaScript</span>
-    <span class="skill-tag braille-text">Haskell</span>
-    <span class="skill-tag braille-text">R</span>
-    <span class="skill-tag braille-text">SQL</span>
+    <div class="skills-container">
 
-    <!-- Web Development -->
-    <span class="skill-tag braille-text">React</span>
-    <span class="skill-tag braille-text">Node.js</span>
-    <span class="skill-tag braille-text">Express.js</span>
-    <span class="skill-tag braille-text">REST APIs</span>
-    <span class="skill-tag braille-text">Full-Stack Development</span>
-    <span class="skill-tag braille-text">HTML/CSS</span>
+        <!-- Programming Languages -->
+        <span class="skill-tag braille-text">Python</span>
+        <span class="skill-tag braille-text">Java</span>
+        <span class="skill-tag braille-text">JavaScript</span>
+        <span class="skill-tag braille-text">Haskell</span>
+        <span class="skill-tag braille-text">R</span>
+        <span class="skill-tag braille-text">SQL</span>
 
-    <!-- Computer Science Fundamentals -->
-    <span class="skill-tag braille-text">Data Structures</span>
-    <span class="skill-tag braille-text">Algorithms</span>
-    <span class="skill-tag braille-text">Algorithm Analysis</span>
-    <span class="skill-tag braille-text">Object-Oriented Programming</span>
-    <span class="skill-tag braille-text">Software Design</span>
+        <!-- Web Development -->
+        <span class="skill-tag braille-text">HTML5</span>
+        <span class="skill-tag braille-text">CSS3</span>
+        <span class="skill-tag braille-text">React</span>
+        <span class="skill-tag braille-text">React Router</span>
+        <span class="skill-tag braille-text">Node.js</span>
+        <span class="skill-tag braille-text">Express.js</span>
+        <span class="skill-tag braille-text">REST APIs</span>
+        <span class="skill-tag braille-text">Full-Stack Development</span>
+        <span class="skill-tag braille-text">Responsive Web Design</span>
 
-    <!-- Databases & Systems -->
-    <span class="skill-tag braille-text">SQL Databases</span>
-    <span class="skill-tag braille-text">Database Design</span>
-    <span class="skill-tag braille-text">Supabase</span>
-    <span class="skill-tag braille-text">MySQL</span>
-    <span class="skill-tag braille-text">IoT Systems</span>
+        <!-- Computer Science -->
+        <span class="skill-tag braille-text">Data Structures</span>
+        <span class="skill-tag braille-text">Algorithms</span>
+        <span class="skill-tag braille-text">Algorithm Analysis</span>
+        <span class="skill-tag braille-text">Object-Oriented Programming</span>
+        <span class="skill-tag braille-text">Software Design</span>
+        <span class="skill-tag braille-text">Computational Thinking</span>
 
-    <!-- Tools & Platforms -->
-    <span class="skill-tag braille-text">Git</span>
-    <span class="skill-tag braille-text">GitHub</span> 
-    <span class="skill-tag braille-text">Visual Studio Code</span>
-    <span class="skill-tag braille-text">Logisim Evolution</span>
-    <span class="skill-tag braille-text">JFLAP</span>
-    <span class="skill-tag braille-text">Overleaf</span>
-    <span class="skill-tag braille-text">LaTeX</span>
-    <span class="skill-tag braille-text">Linux/Unix</span>
-    <span class="skill-tag braille-text">Command Line</span>
+        <!-- Databases & Systems -->
+        <span class="skill-tag braille-text">MySQL</span>
+        <span class="skill-tag braille-text">Supabase</span>
+        <span class="skill-tag braille-text">PostgreSQL</span>
+        <span class="skill-tag braille-text">Database Design</span>
+        <span class="skill-tag braille-text">Database Management</span>
+        <span class="skill-tag braille-text">Authentication</span>
+        <span class="skill-tag braille-text">IoT Systems</span>
+        <span class="skill-tag braille-text">Raspberry Pi</span>
 
-    <!-- Data & AI -->
-    <span class="skill-tag braille-text">Machine Learning</span>
-    <span class="skill-tag braille-text">Statistics</span>
-    <span class="skill-tag braille-text">Probability</span>
+        <!-- Data, Statistics & AI -->
+        <span class="skill-tag braille-text">Statistical Analysis</span>
+        <span class="skill-tag braille-text">Probability</span>
+        <span class="skill-tag braille-text">Data Analysis</span>
+        <span class="skill-tag braille-text">Data Visualization</span>
+        <span class="skill-tag braille-text">Machine Learning</span>
+
+        <!-- Tools & Platforms -->
+        <span class="skill-tag braille-text">Git</span>
+        <span class="skill-tag braille-text">GitHub</span>
+        <span class="skill-tag braille-text">Visual Studio Code</span>
+        <span class="skill-tag braille-text">Figma</span>
+        <span class="skill-tag braille-text">Logisim Evolution</span>
+        <span class="skill-tag braille-text">JFLAP</span>
+        <span class="skill-tag braille-text">Overleaf</span>
+        <span class="skill-tag braille-text">LaTeX</span>
+        <span class="skill-tag braille-text">Linux/Unix</span>
+        <span class="skill-tag braille-text">Command Line</span>
 
     </div>
-    </section>
+</section>
 
-    <section id="coursework" class="coursework">
-
-        <h2 class="braille-text">Relevant Coursework</h2>
-
-        <div class="coursework-container">
-
-            <span class="course-tag braille-text">Fundamentals of Programming</span>
-            <span class="course-tag braille-text">Introduction to Computer Science</span>
-            <span class="course-tag braille-text">Linear Algebra</span>
-            <span class="course-tag braille-text">Mathematical Foundations of Computer Science</span>
-            <span class="course-tag braille-text">Introduction to Statistics</span>
-            <span class="course-tag braille-text">Calculus II</span>
-            <span class="course-tag braille-text">Data Structures & Algorithms</span>
-            <span class="course-tag braille-text">Probability</span>
-            <span class="course-tag braille-text">Calculus III</span>
-            <span class="course-tag braille-text">Macroeconomics</span>
-
-        </div>
-
-    </section>
 
     <section id="experience" class="experience">
 
@@ -279,23 +471,37 @@
                 <p class="role-subtitle braille-text">Education Matters Africa</p>
                 <p class="role-subtitle braille-text">May 2026 - Aug 2026</p>
 
-                <ul>
-                    <li class="braille-text">
-                        Served as a Remote Web Development Intern contributing to the design and development of digital solutions for Education Matters Africa and its alumni community initiatives.
-                    </li>
+                <p class="braille-text">
+                    Worked on migrating the organization's legacy website to a custom web platform, contributing to the development of responsive pages and interactive features to improve how users access information and navigate the site.
+                </p>
 
-                    <li class="braille-text">
-                        Collaborated with another developer to plan, implement, and refine web application features while translating organizational goals and user needs into technical solutions.
-                    </li>
+                <p class="braille-text">
+                    • Developed responsive frontend pages and reusable UI components using React, JavaScript, HTML, and CSS.<br>
+                    • Implemented page layouts, navigation, and interactive elements to create consistent user experiences across different screen sizes.<br>
+                    • Translated project requirements into functional interface components and connected frontend features to backend services.<br>
+                    • Implemented backend functionality using Java and REST APIs to support dynamic content and application features.<br>
+                    • Integrated MySQL databases to manage and retrieve website content.<br>
+                    • Used Git and GitHub for collaborative development and version control, and Postman to test and debug API endpoints.<br>
+                    • Contributed to a platform serving over 1,000 monthly visitors.
+                </p>
+            </div>
 
-                    <li class="braille-text">
-                        Applied frontend development principles, including responsive design, component-based development, and user interface implementation, to create accessible and maintainable web experiences.
-                    </li>
+            <div class="experience-card">
+                <h4 class="braille-text">Student Manager</h4>
+                <p class="role-subtitle braille-text">Pomona College Coop Store</p>
+                <p class="role-subtitle braille-text">Oct 2025 - Present</p>
 
-                    <li class="braille-text">
-                        Worked with technical mentors and organizational stakeholders throughout the development process, gaining experience in software planning, iterative development, and collaborative engineering workflows.
-                    </li>
-                </ul>
+                <p class="braille-text">
+                    Oversee daily store operations, including sales, inventory management, mail orders, and coordination of student employees. My experience managing inventory also led me to explore ways to improve the store's existing processes through interface design.
+                </p>
+
+                <p class="braille-text">
+                    • Manage inventory, sales records, and mail orders while supporting daily store operations.<br>
+                    • Supervise and train student employees, coordinating tasks to keep store operations running smoothly.<br>
+                    • Identified inefficiencies in the store's spreadsheet-based inventory tracking process, which required staff to manually update item quantities after sales.<br>
+                    • Used Figma to create a mockup of an alternative inventory management interface, exploring ways to simplify inventory tracking and make information easier to access.<br>
+                    • Presented the concept to store management and explored existing solutions, as the store began transitioning to Lightspeed.
+                </p>
             </div>
 
             <div class="experience-card">

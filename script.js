@@ -159,25 +159,99 @@ let utterance;
 
 const speakButton = document.getElementById("speakButton");
 
-speakButton.addEventListener("click", () => {
+if (speakButton) {
+    let isSpeaking = false;
+    let speechChunks = [];
+    let currentChunk = 0;
 
-    if (isSpeaking) {
-        window.speechSynthesis.cancel();
-        isSpeaking = false;
-        speakButton.textContent = "🔊 Read Page";
-        return;
+    function getPageText() {
+        const selection = window.getSelection().toString().trim();
+
+        if (selection) {
+            return selection;
+        }
+
+        const elements = Array.from(
+            document.querySelectorAll(".braille-text")
+        ).filter(el => !el.parentElement.closest(".braille-text"));
+
+        return elements.map(el => {
+            if (el.dataset.original) {
+                const temp = document.createElement("div");
+                temp.innerHTML = el.dataset.original;
+                return temp.textContent;
+            }
+            return el.textContent;
+        }).join(". ").replace(/\s+/g, " ").trim();
     }
 
-    const text = document.body.innerText;
-    utterance = new SpeechSynthesisUtterance(text);
-
-    utterance.onend = () => {
+    function stopReading() {
         isSpeaking = false;
-        speakButton.textContent = "🔊 Read Page";
-    };
+        window.speechSynthesis.cancel();
+        speechChunks = [];
+        currentChunk = 0;
+        speakButton.textContent = "Read Page";
+    }
 
-    window.speechSynthesis.speak(utterance);
+    function speakNext() {
+        if (!isSpeaking) return;
 
-    isSpeaking = true;
-    speakButton.textContent = "⏹ Stop";
-});
+        if (currentChunk >= speechChunks.length) {
+            stopReading();
+            return;
+        }
+
+        const utterance = new SpeechSynthesisUtterance(
+            speechChunks[currentChunk]
+        );
+
+        utterance.lang = "en-US";
+        utterance.rate = 1;
+
+        utterance.onend = () => {
+            currentChunk++;
+            speakNext();
+        };
+
+        utterance.onerror = (event) => {
+            if (event.error !== "canceled" &&
+                event.error !== "interrupted") {
+                console.error("Speech error:", event.error);
+                stopReading();
+            }
+        };
+
+        window.speechSynthesis.speak(utterance);
+    }
+
+    speakButton.addEventListener("click", () => {
+
+        if (!("speechSynthesis" in window)) {
+            alert("Your browser does not support text-to-speech.");
+            return;
+        }
+
+        if (isSpeaking) {
+            stopReading();
+            return;
+        }
+
+        const text = getPageText();
+
+        if (!text) {
+            console.log("No page text found.");
+            return;
+        }
+
+        // Break long text into smaller chunks.
+        speechChunks = text.match(/[^.!?]+[.!?]+|[^.!?]+$/g) || [text];
+
+        currentChunk = 0;
+        isSpeaking = true;
+
+        speakButton.textContent = "Stop Reading";
+
+        window.speechSynthesis.cancel();
+        speakNext();
+    });
+}
